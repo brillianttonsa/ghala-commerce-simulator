@@ -1,0 +1,15 @@
+# Node modules for both backend and frontend
+ghala-backend/node_modules/
+ghala-frontend/node_modules/
+
+# Environment variables
+.env
+ghala-backend/.env
+ghala-frontend/.env
+
+
+# OS & Editor stuff
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
