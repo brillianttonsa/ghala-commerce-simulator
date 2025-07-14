@@ -58,6 +58,7 @@ const OrderForm = ({ merchants, onOrderCreated, onCancel }) => {
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">Merchant</label>
           <select
+            name="merchant_id"
             value={formData.merchant_id}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -76,6 +77,7 @@ const OrderForm = ({ merchants, onOrderCreated, onCancel }) => {
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Customer Name</label>
             <input
+              name="customer_name"
               type="text"
               value={formData.customer_name}
               onChange={handleChange}
@@ -88,6 +90,7 @@ const OrderForm = ({ merchants, onOrderCreated, onCancel }) => {
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Customer Email</label>
             <input
+              name="customer_email"
               type="email"
               value={formData.customer_email}
               onChange={handleChange}
@@ -101,6 +104,7 @@ const OrderForm = ({ merchants, onOrderCreated, onCancel }) => {
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">Product Name</label>
           <input
+            name="product_name"
             type="text"
             value={formData.product_name}
             onChange={handleChange}
@@ -113,6 +117,7 @@ const OrderForm = ({ merchants, onOrderCreated, onCancel }) => {
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">Total Amount (Tsh)</label>
           <input
+            name="total_amount"
             type="number"
             step="0.01"
             min="0"
