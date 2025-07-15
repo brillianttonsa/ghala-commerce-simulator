@@ -32,11 +32,11 @@ function Main({ activeTab, setShowOrderForm, merchants, orders, handleMerchantSa
 
                 {activeTab === "merchants" && (
                     <motion.div
-                    key="merchants"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.2 }}
+                        key="merchants"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.2 }}
                     >
                     <h2 className="text-3xl font-bold text-gray-900 mb-6">Merchant Settings</h2>
                     <MerchantSettings merchants={merchants} onMerchantSaved={handleMerchantSaved} />
